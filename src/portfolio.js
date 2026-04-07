@@ -23,7 +23,7 @@ const greeting = {
   username: "Mbaïram Benjamin Beassoum",
   title: "Hi all, I'm Benjamin",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with Java /Flutter and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1SvtnQj0DgkEKTpDbPPCOPGGmc1RnCzBJ/view?usp=drive_link", // Set to empty to hide the button
@@ -36,10 +36,10 @@ const socialMediaLinks = {
   github: "https://github.com/BenjosMB235",
   linkedin: "https://www.linkedin.com/in/benjos235/",
   gmail: "mbaibenjsos@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
+  gitlab: "https://gitlab.com/",
   facebook: "https://www.facebook.com/Benjos235",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  medium: "https://medium.com/",
+  stackoverflow: "https://stackoverflow.com/users/10422806/,
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -138,7 +138,7 @@ const educationInfo = {
     },
     {
       schoolName: "Lycée Sacré-Coeur",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/lscLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
       duration: "September 2019 - April 2022",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
@@ -154,7 +154,7 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "70%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
@@ -162,7 +162,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,10 +174,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      role: "Banking Digital Intern",
+      company: "Orabank",
+      companylogo: require("./assets/images/orabankLogo.png"),
+      date: "march 2026 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -185,17 +185,17 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      role: "Software Developer Intern",
+      company: "Air France",
+      companylogo: require("./assets/images/AirFranceLogo.png"),
+      date: "Juin 2025 – August 2025",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      company: "Lalekou Informatique",
+      companylogo: require("./assets/images/lalekouInfLogo.png"),
+      date: "Juillet 2023 – Sep 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
@@ -213,15 +213,15 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "SOME MODELS THAT I DEVELOPED TO HELP THE DESICION IN THE AGRICULTURAL SECTOR",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
+      projectName: "YieldPredictor",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Visit Repository Github",
           url: "http://saayahealth.com/"
         }
         //  you can add extra buttons here.
@@ -229,11 +229,11 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
+      projectName: "StressHydrique",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Visit Repository Github",
           url: "http://nextu.se/"
         }
       ]
