@@ -23,7 +23,7 @@ const greeting = {
   username: "Mbaïram Benjamin Beassoum",
   title: "Hi all, I'm Benjamin",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Full-stack developer and enthusiast of Data Science & AI 🚀. With a bachelor’s degree in Computer Engineering (with honors), I build web and mobile applications using Java, Flutter, and React, as well as ML models using Python and Scikit-learn. My goal: to transform agriculture in Chad through artificial intelligence."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1SvtnQj0DgkEKTpDbPPCOPGGmc1RnCzBJ/view?usp=drive_link", // Set to empty to hide the button
@@ -36,10 +36,10 @@ const socialMediaLinks = {
   github: "https://github.com/BenjosMB235",
   linkedin: "https://www.linkedin.com/in/benjos235/",
   gmail: "mbaibenjsos@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/Benjos235",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  //gitlab: "https://gitlab.com/",
+  // medium: "https://medium.com/",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,100 +49,109 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "ASPIRING ML ENGINEER & FULL-STACK DEVELOPER PASSIONATE ABOUT AI FOR AGRICULTURE",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Build and deploy machine learning models for agricultural prediction and classification"),
+    emoji("⚡ Develop full-stack web and mobile applications using Java, Flutter, React and PHP"),
+    emoji("⚡ Analyze and visualize data with Python (Pandas, Scikit-learn, Matplotlib) and Power BI"),
+    emoji("⚡ Design and manage relational databases with PostgreSQL, MySQL and Supabase"),
   ],
-
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+    { 
+      skillName: "Python",        
+      fontAwesomeClassname: "fab fa-python"   
     },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+    { 
+      skillName: "Java",          
+      fontAwesomeClassname: "fab fa-java"     
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+    { 
+      skillName: "R",             
+      fontAwesomeClassname: "fab fa-r-project"
     },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+    { 
+      skillName: "SQL / PostgreSQL", 
+      fontAwesomeClassname: "fab fa-postgresql"
     },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+    { 
+      skillName: "React.js",      
+      fontAwesomeClassname: "fab fa-react"    
     },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+    { 
+      skillName: "HTML5",         
+      fontAwesomeClassname: "fab fa-html5"    
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+    { 
+      skillName: "CSS3",          
+      fontAwesomeClassname: "fab fa-css3-alt" 
     },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+    { 
+      skillName: "Node.js",       
+      fontAwesomeClassname: "fab fa-node"     
     },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+    { 
+      skillName: "Flutter",       
+      fontAwesomeClassname: "fab fa-flutter"  
     },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+    { 
+      skillName: "Docker",        
+      fontAwesomeClassname: "fab fa-docker"   
     },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+    { 
+      skillName: "Git / GitHub",  
+      fontAwesomeClassname: "fab fa-git-alt"  
     },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+    { 
+      skillName: "Firebase",      
+      fontAwesomeClassname: "fas fa-fire"     
     },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+    { 
+      skillName: "Android Studio",       
+      fontAwesomeClassname: "fas fa-mobile-screen"  // ← existe en FA5
+    },
+    { 
+      skillName: "Supabase",      
+      fontAwesomeClassname: "fas fa-database" 
+    },
+    { 
+      skillName: "Linux",         
+      fontAwesomeClassname: "fab fa-linux"    
+    },
+    { 
+      skillName: "npm",           
+      fontAwesomeClassname: "fab fa-npm"      
+    },
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "CEFOD Business School",
       logo: require("./assets/images/logoCBS.png"),
-      subHeader: "Bachelor in Computer Science",
-      duration: "September 2022 - April 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      subHeader: "Professional Bachelor's Degree in Computer Engineering",
+      duration: "September 2022 – April 2025",
+      desc: "Valedictorian — Upper Honors (14.85/20). Thesis defense: 18/20.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Specialization in software development, databases, and networking",
+        "Final year thesis defended with distinction"
       ]
     },
     {
-      schoolName: "Lycée Sacré-Coeur",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2019 - April 2022",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Lycée Sacré-Cœur",
+      logo: require("./assets/images/lscLogo.png"),
+      subHeader: "Baccalaureate Series D",
+      duration: "June 2022",
+      desc: "Upper Honors (14.94/20) — Mathematics: 14/20.",
+      descBullets: []
     }
   ]
 };
@@ -150,22 +159,13 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+    { Stack: "Data Science / Machine Learning", progressPercentage: "65%" },
+    { Stack: "Backend Development (Java, Python, PHP)", progressPercentage: "70%" },
+    { Stack: "Frontend Development (React, HTML/CSS)", progressPercentage: "60%" }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
 // Work experience section
@@ -174,29 +174,37 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Banking Digital Intern",
+      company: "Orabank",
+      companylogo: require("./assets/images/orabankLogo.png"),
+      date: "march 2026 – Present",
+      desc: "Software development and maintenance, data collection and cleaning, day-to-day technical support.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Development and maintenance of internal applications",
+        "Data collection, cleaning, and storage"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Developer Intern",
+      company: "Air France",
+      companylogo: require("./assets/images/AirFranceLogo.png"),
+      date: "Juin 2025 – August 2025",
+      desc: "Design of an electronic document management application to optimize internal archiving.",
+      descBullets: [
+        "Implementation of a PostgreSQL database using Supabase",
+        "XML/Java user interface; automation of document workflow (upload, indexing, search)"
+      ]
     },
     {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      company: "Lalekou Informatique",
+      companylogo: require("./assets/images/lalekouInfLogo.png"),
+      date: "Juillet 2023 – Sep 2023",
+      desc: "Custom website development and training for computer science students.",
+      descBullets: [
+        "IT equipment maintenance",
+        "Curriculum design and coordination with instructors"
+      ]
     }
   ]
 };
@@ -213,29 +221,31 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "AI MODELS AND APPLICATIONS I HAVE DEVELOPED FOR THE AGRICULTURAL SECTOR",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/R1.png"),
+      projectName: "YieldPredictor",
+      projectDesc: "Machine learning model to predict agricultural yields in Chad using climate and agronomic data.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
+        { name: "View on GitHub", url: "https://github.com/BenjosMB235/Prediction-rendement-Mil-Sorgho-Tchad" }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/R2.png"),
+      projectName: "StressHydrique",
+      projectDesc: "Classification model to detect crop water stress using satellite imagery and weather data.",
       footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
+        { name: "View on GitHub", url: "https://github.com/BenjosMB235/stress-hydrique-tchad" }
+      ]
+    },
+    {
+      image: require("./assets/images/R3.jpg"),
+      projectName: "NexusDoc",
+      projectDesc: "Electronic document management application developed during the Air France internship — PostgreSQL, Supabase, Java/XML.",
+      footerLink: [
+        { name: "View on GitHub", url: "https://github.com/BenjosMB235/NexusDoc" }
       ]
     }
   ],
@@ -246,61 +256,110 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
+  title: emoji("Achievements & Certifications 🏆"),
+  subtitle: "Scholarships, awards and training that mark my journey",
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      title: "Aspire Leader Program – Harvard (Aspire Institute)",
+      subtitle: "2026 recipient of the international leadership and development program at the Aspire Institute (Harvard).",
+      image: require("./assets/images/aspire.jpg"),
+      imageAlt: "Aspire Institute Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
         {
           name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1jICKUmv09ip-J4FkLJzIxJy5U2kMeJvI/view?usp=sharing"
         },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Ashinaga Scholarship for Africa (IAA)",
+      subtitle: "2025 scholar of the Ashinaga Initiative for Africa — selective program (1 candidate per country out of 1900).",
+      image: require("./assets/images/ashinaga.png"),
+      imageAlt: "Ashinaga Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
+          name: "Award Letter",
+          url: "https://drive.google.com/file/d/1mf2Y2n4rRjjcPICxOJivZthwyDpUmDj4/view?usp=sharing"
+        },
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Machine Learning A-Z – Udemy (2025)",
+      subtitle: "43 hours of ML training with Python & R, 5 coding exercises",
+      image: require("./assets/images/udemy.webp"),
+      imageAlt: "Udemy Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1ZJlu0iANkXm6aHVGOmKVnrlUq3CwpWpL/view?usp=sharing"
+        },
+      ]
+    },
+    {
+      title: "Data Analyst with Python (2024)",
+      subtitle: "36 hours of data training with Python, 5 projects",
+      image: require("./assets/images/datacamp.png"),
+      imageAlt: "Udemy Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1ZhSHIFOgwCG2P72-7a_K6-dpBsGQrLK0/view?usp=sharing"
+        },
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
+};
+
+// Volunteer Section
+
+const volunteerSection = {
+  title: "Volunteering",
+  subtitle: "GIVING BACK TO THE COMMUNITY THROUGH TECHNOLOGY AND LEADERSHIP",
+  display: true,
+  volunteering: [
+    {
+      role: "Organization Committee Member",
+      organization: "IndabaX Chad",
+      location: "N'Djaména, Chad",
+      date: "2024 – 2025",
+      desc: "Member of the organizing committee of the 1st and 2nd editions of the first AI conference in Chad.",
+      descBullets: [
+        "Partnership prospecting and development",
+        "Budget management (2M+ FCFA)",
+        "Coordination of 120 participants (2024) and 240 participants (2025)",
+        "Event management: conference venue sourcing"
+      ],
+      tags: ["AI Conference", "Event Management"]
+    },
+    {
+      role: "Leadership & Excellence Program",
+      organization: "Ashinaga Senegal",
+      location: "Senegal / Online",
+      date: "July 2025 – Present",
+      desc: "International scholarship and leadership program — 1 candidate selected per country out of 1900 applicants.",
+      descBullets: [
+        "Academic preparation: organizational skills, English",
+        "Personal development: leadership, cultural integration",
+        "Professional development: community development, project management"
+      ],
+      tags: ["Leadership", "Scholarship"]
+    },
+    {
+        role: "Community Action Volunteer — IMP'ACT Program",
+        organization: "Ashinaga Senegal - OVA (Organisation des Volontaires d'Afrique)",
+        location: "N'Djaména, Chad",
+        date: "March 2026",
+        desc: "Designed and delivered a hands-on training session on finding reliable educational and professional opportunities online, as part of OVA and Ashinaga's IMP'ACT community mobilization program.",
+        descBullets: [
+          "Trained 17 participants including students and young community leaders",
+          "Covered 3 modules: effective search techniques, information reliability verification, and digital professional identity",
+          "Conducted practical exercises to build concrete digital literacy skills",
+          "Raised awareness on online scams and how to identify trustworthy opportunities"
+        ],
+        tags: ["Community Impact", "Digital Literacy", "Training"]
+      }
+  ]
 };
 
 // Blogs Section
@@ -324,7 +383,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +402,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +415,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -370,9 +429,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+23560596558",
+  subtitle: "Want to discuss a project, a collaboration, or just say hi? My inbox is always open.",
+  number: "+235 60 59 65 58",
   email_address: "mbaibenjsos@gmail.com"
 };
 
@@ -380,10 +438,10 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -397,6 +455,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  volunteerSection,
   blogSection,
   talkSection,
   podcastSection,

@@ -41,12 +41,14 @@
 }
 
 .education-roundedimg {
-  object-fit: cover;
+  object-fit: contain;        /* ← était "cover", corrigé en "contain" */
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  border-radius: 16px;        /* ← était "50%", coins arrondis mais pas cercle */
+  background-color: white;    /* ← fond blanc pour les PNG transparents */
+  padding: 6px;               /* ← espace pour que le logo ne touche pas les bords */
 }
 
 .education-card-right {
@@ -107,6 +109,7 @@
     height: 4rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
+    padding: 4px; 
   }
 }
 
@@ -126,6 +129,7 @@
     height: 4rem;
     margin-bottom: 1rem;
     margin-right: 0;
+    padding: 4px; 
   }
   .education-text-bullets > ul {
     max-width: 80%;
