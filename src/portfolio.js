@@ -74,7 +74,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     { 
       skillName: "SQL / PostgreSQL", 
-      fontAwesomeClassname: "fas fa-database"
+      fontAwesomeClassname: "fab fa-postgresql"
     },
     { 
       skillName: "React.js",      
@@ -107,6 +107,10 @@ https://fontawesome.com/icons?d=gallery */
     { 
       skillName: "Firebase",      
       fontAwesomeClassname: "fas fa-fire"     
+    },
+    { 
+      skillName: "Android Studio",       
+      fontAwesomeClassname: "fas fa-mobile-screen"  // ← existe en FA5
     },
     { 
       skillName: "Supabase",      
