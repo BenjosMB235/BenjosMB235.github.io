@@ -220,28 +220,28 @@ const bigProjects = {
   subtitle: "AI MODELS AND APPLICATIONS I HAVE DEVELOPED FOR THE AGRICULTURAL SECTOR",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/R1.png"),
       projectName: "YieldPredictor",
       projectDesc: "Machine learning model to predict agricultural yields in Chad using climate and agronomic data.",
       footerLink: [
-        { name: "View on GitHub", url: "https://github.com/BenjosMB235" }
+        { name: "View on GitHub", url: "https://github.com/BenjosMB235/Prediction-rendement-Mil-Sorgho-Tchad" }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/R2.png"),
       projectName: "StressHydrique",
       projectDesc: "Classification model to detect crop water stress using satellite imagery and weather data.",
       footerLink: [
-        { name: "View on GitHub", url: "https://github.com/BenjosMB235" }
+        { name: "View on GitHub", url: "https://github.com/BenjosMB235/stress-hydrique-tchad" }
       ]
     },
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/R3.jpg"),
       projectName: "NexusDoc",
       projectDesc: "Electronic document management application developed during the Air France internship — PostgreSQL, Supabase, Java/XML.",
       footerLink: [
-        { name: "View on GitHub", url: "https://github.com/BenjosMB235" }
+        { name: "View on GitHub", url: "https://github.com/BenjosMB235/NexusDoc" }
       ]
     }
   ],
@@ -263,7 +263,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1jICKUmv09ip-J4FkLJzIxJy5U2kMeJvI/view?usp=sharing"
         },
       ]
     },
@@ -275,7 +275,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          url: "https://drive.google.com/file/d/1mf2Y2n4rRjjcPICxOJivZthwyDpUmDj4/view?usp=sharing"
         },
       ]
     },
@@ -286,8 +286,8 @@ const achievementSection = {
       imageAlt: "Udemy Logo",
       footerLink: [
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1ZJlu0iANkXm6aHVGOmKVnrlUq3CwpWpL/view?usp=sharing"
         },
       ]
     },
@@ -298,13 +298,64 @@ const achievementSection = {
       imageAlt: "Udemy Logo",
       footerLink: [
         {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/1ZhSHIFOgwCG2P72-7a_K6-dpBsGQrLK0/view?usp=sharing"
         },
       ]
     }
   ],
   display: true
+};
+
+// Volunteer Section
+
+const volunteerSection = {
+  title: "Volunteering",
+  subtitle: "GIVING BACK TO THE COMMUNITY THROUGH TECHNOLOGY AND LEADERSHIP",
+  display: true,
+  volunteering: [
+    {
+      role: "Organization Committee Member",
+      organization: "IndabaX Chad",
+      location: "N'Djaména, Chad",
+      date: "2024 – 2025",
+      desc: "Member of the organizing committee of the 1st and 2nd editions of the first AI conference in Chad.",
+      descBullets: [
+        "Partnership prospecting and development",
+        "Budget management (2M+ FCFA)",
+        "Coordination of 120 participants (2024) and 240 participants (2025)",
+        "Event management: conference venue sourcing"
+      ],
+      tags: ["AI Conference", "Event Management"]
+    },
+    {
+      role: "Leadership & Excellence Program",
+      organization: "Ashinaga Senegal",
+      location: "Senegal / Online",
+      date: "July 2025 – Present",
+      desc: "International scholarship and leadership program — 1 candidate selected per country out of 1900 applicants.",
+      descBullets: [
+        "Academic preparation: organizational skills, English",
+        "Personal development: leadership, cultural integration",
+        "Professional development: community development, project management"
+      ],
+      tags: ["Leadership", "Scholarship"]
+    },
+    {
+        role: "Community Action Volunteer — IMP'ACT Program",
+        organization: "Ashinaga Senegal - OVA (Organisation des Volontaires d'Afrique)",
+        location: "N'Djaména, Chad",
+        date: "March 2026",
+        desc: "Designed and delivered a hands-on training session on finding reliable educational and professional opportunities online, as part of OVA and Ashinaga's IMP'ACT community mobilization program.",
+        descBullets: [
+          "Trained 17 participants including students and young community leaders",
+          "Covered 3 modules: effective search techniques, information reliability verification, and digital professional identity",
+          "Conducted practical exercises to build concrete digital literacy skills",
+          "Raised awareness on online scams and how to identify trustworthy opportunities"
+        ],
+        tags: ["Community Impact", "Digital Literacy", "Training"]
+      }
+  ]
 };
 
 // Blogs Section
@@ -400,6 +451,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  volunteerSection,
   blogSection,
   talkSection,
   podcastSection,

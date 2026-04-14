@@ -1,0 +1,147 @@
+@import "../../_globalColor";
+
+.volunteer-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding-left: 28px;
+}
+
+.volunteer-dot {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $buttonColor;
+  border: 2px solid $lightBackground1;
+  z-index: 1;
+}
+
+.dark-mode .volunteer-dot {
+  border-color: $darkBackground;
+}
+
+.volunteer-card {
+  background-color: $lightBackground2;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateX(6px);
+    box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  }
+}
+
+.dark-mode .volunteer-card {
+  background-color: $darkBackground;
+  border-color: $lightBorder1;
+
+  &:hover {
+    box-shadow: $achievementCertificateCardHoverDark 0px 10px 30px -15px;
+  }
+}
+
+.volunteer-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.volunteer-role {
+  font-size: 22px; 
+  font-weight: 700;
+  margin: 0;
+}
+
+.volunteer-date {
+  font-size: 14px;
+  color: $subTitle;
+  background-color: $lightBackground3;
+  border: 1px solid $lightBorder1;
+  border-radius: 99px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
+.dark-mode .volunteer-date {
+  background-color: $darkBackground;
+}
+
+.volunteer-org {
+  font-size: 20px;  
+  font-weight: 700;
+  color: $buttonColor;
+  margin: 0 0 8px 0;
+}
+
+.volunteer-desc {
+  color: $subTitle;
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+}
+
+.dark-mode .volunteer-desc {
+  color: inherit;
+}
+
+.volunteer-bullets {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 10px 0;
+}
+
+.volunteer-bullet-item {
+  color: $subTitle;
+  margin-bottom: 4px;
+  padding-left: 2.6rem;
+  position: relative;
+
+  &::before {
+    content: "—";
+    position: absolute;
+    left: 1rem;
+    color: $buttonColor;
+  }
+}
+
+.dark-mode .volunteer-bullet-item {
+  color: inherit;
+}
+
+.volunteer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.volunteer-tag {
+  font-size: 14px; 
+  background-color: $buttonColor;
+  color: $lightBackground1;
+  border-radius: 4px;
+  padding: 2px 10px;
+  cursor: default;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $buttonHover;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteer-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .volunteer-role {
+    font-size: 20px;
+  }
+}
